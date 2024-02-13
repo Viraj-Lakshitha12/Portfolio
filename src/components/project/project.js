@@ -8,6 +8,7 @@ import project4 from '../../assets/projects/project4.png'
 import project5 from '../../assets/projects/project5.png'
 import project6 from '../../assets/projects/project6.png'
 import project7 from '../../assets/projects/project7.png'
+
 export const Project = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
@@ -96,7 +97,6 @@ export const Project = () => {
         <div className="slider-wrapper flex">
           <div className="slide flex">
             <div className="slide-image slider-link prev"><img src={project1} alt={'project1'} />
-              {/*<div className="overlay"></div>*/}
             </div>
             <div className="slide-content">
               <div className="slide-date">02.05.2022.</div>
@@ -111,7 +111,6 @@ export const Project = () => {
 
           <div className="slide flex">
             <div className="slide-image slider-link next"><img src={project5} alt={'project5'} />
-              {/*<div className="overlay"></div>*/}
             </div>
             <div className="slide-content">
               <div className="slide-date">30.12.2023.</div>
@@ -123,16 +122,17 @@ export const Project = () => {
               <div className="slide-more">READ MORE</div>
             </div>
           </div>
+
           <div className="slide flex">
-            <div className="slide-image slider-link next"><img src={project4} alt={'project4'} />
-              <div className="overlay"></div>
+            <div className="slide-image slider-link next"><img src={project4} alt={'weather-app'} />
             </div>
             <div className="slide-content">
-              <div className="slide-date">30.09.2017.</div>
-              <div className="slide-title">LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT</div>
-              <div className="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat
-                apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per
-                rebum omittam ex.
+              <div className="slide-date">10.02.2024.</div>
+              <div className="slide-title">Weather App</div>
+              <div className="slide-text">The weather application is developed using React and Vite. It provides
+                real-time weather information for specified locations, offering details such as temperature, weather
+                conditions, and additional insights. Users can search for cities to get accurate and up-to-date weather
+                forecasts.
               </div>
               <div className="slide-more">READ MORE</div>
             </div>
