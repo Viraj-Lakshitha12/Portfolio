@@ -1,8 +1,5 @@
 import { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'
-import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 
@@ -16,21 +13,6 @@ const Contact = () => {
     }, 3000)
   }, [])
 
-  const sendEmail = (e) => {
-    e.preventDefault()
-
-    emailjs
-      .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
-      .then(
-        () => {
-          alert('Message successfully sent!')
-          window.location.reload(false)
-        },
-        () => {
-          alert('Failed to send the message, please try again')
-        }
-      )
-  }
 
   return (
     <>
@@ -49,7 +31,7 @@ const Contact = () => {
             questions, don't hesitate to contact me using below form either.
           </p>
           <div className="contact-form">
-            <form ref={form} onSubmit={sendEmail}>
+            <form>
               <ul>
                 <li className="half">
                   <input placeholder="Name" type="text" name="name" required />
@@ -85,24 +67,28 @@ const Contact = () => {
           </div>
         </div>
         <div className="info-map">
-          Viraj Lakshitha,
+         Viraj Lakshitha
           <br />
-          50 / A / 3,
-          <br />
-          Galanigama , <br />
-          Bandaragama .<br />
+          50 / A / 3 <br />
+          Galanigama<br />
+          Bandaragama
           <br />
           <span>viraj.lakshitha.22222@gmail.com</span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[6.7144, 79.9891]} zoom={13}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[44.96366, 19.61045]}>
-            </Marker>
-          </MapContainer>
+          <figure className="map-viewer">
+            <iframe
+              className=" "
+              title="Google Maps"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15844.748315477245!2d79.88568169999999!3d6.8681728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1704369240532!5m2!1sen!2slk"
+              style={{ border: '0', width: '50%', height: '100%', filter: 'grayscale(1) invert(1)' }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </figure>
         </div>
       </div>
-      <Loader type="pacman" />
     </>
   )
 }

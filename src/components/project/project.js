@@ -1,13 +1,15 @@
-import React, { useEffect } from 'react';
-import $ from 'jquery';
-import { TweenMax, TweenLite } from 'gsap/all';
-import './index.scss';
+import React, { useEffect, useRef, useState } from 'react'
+import $ from 'jquery'
+import { TweenMax, TweenLite } from 'gsap/all'
+import './index.scss'
+import AnimatedLetters from '../AnimatedLetters'
 
 export const Project = () => {
+  const [letterClass, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
-    (function ($) {
-      $(document).ready(function () {
+    (function($) {
+      $(document).ready(function() {
         var s = $('.slider'),
           sWrapper = s.find('.slider-wrapper'),
           sItem = s.find('.slide'),
@@ -19,66 +21,73 @@ export const Project = () => {
           slide_text = s.find('.slide-text'),
           slide_more = s.find('.slide-more'),
           slide_image = s.find('.slide-image img'),
-          sTotalWidth = sCount * sWidth;
+          sTotalWidth = sCount * sWidth
 
-        sWrapper.css('width', sTotalWidth);
+        sWrapper.css('width', sTotalWidth)
 
-        var clickCount = 0;
+        var clickCount = 0
 
-        btn.on('click', function (e) {
-          e.preventDefault();
+        btn.on('click', function(e) {
+          e.preventDefault()
 
           if ($(this).hasClass('next')) {
-            clickCount < sCount - 1 ? clickCount++ : (clickCount = 0);
+            clickCount < sCount - 1 ? clickCount++ : (clickCount = 0)
           } else if ($(this).hasClass('prev')) {
-            clickCount > 0 ? clickCount-- : (clickCount = sCount - 1);
+            clickCount > 0 ? clickCount-- : (clickCount = sCount - 1)
           }
-          TweenMax.to(sWrapper, 0.4, { x: `-${sWidth * clickCount}` });
+          TweenMax.to(sWrapper, 0.4, { x: `-${sWidth * clickCount}` })
 
           //CONTENT ANIMATIONS
 
-          var fromProperties = { autoAlpha: 0, x: '-50', y: '-10' };
-          var toProperties = { autoAlpha: 0.8, x: '0', y: '0' };
+          var fromProperties = { autoAlpha: 0, x: '-50', y: '-10' }
+          var toProperties = { autoAlpha: 0.8, x: '0', y: '0' }
 
           TweenLite.fromTo(
             slide_image,
             1,
             { autoAlpha: 0, y: '40' },
-            { autoAlpha: 1, y: '0' }
-          );
+            { autoAlpha: 1, y: '0' },
+          )
           TweenLite.fromTo(
             slide_date,
             0.4,
             fromProperties,
-            toProperties
-          );
+            toProperties,
+          )
           TweenLite.fromTo(
             slide_title,
             0.6,
             fromProperties,
-            toProperties
-          );
+            toProperties,
+          )
           TweenLite.fromTo(
             slide_text,
             0.8,
             fromProperties,
-            toProperties
-          );
+            toProperties,
+          )
           TweenLite.fromTo(
             slide_more,
             1,
             fromProperties,
-            toProperties
-          );
-        });
-      });
-    })($);
+            toProperties,
+          )
+        })
+      })
+    })($)
 
-    $('.overlay').addClass('overlay-blue');
-  }, []);
+    $('.overlay').addClass('overlay-blue')
+  }, [])
 
   return (
     <div>
+      <h1 className={'project-title'}>
+        <AnimatedLetters
+          letterClass={letterClass}
+          strArray={['P', 'r', 'o', 'j', 'e', 'c', 't', 's']}
+          idx={10}
+        />
+      </h1>
       <div className="slider">
         <div className="slider-wrapper flex">
           <div className="slide flex">
@@ -144,6 +153,6 @@ export const Project = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
