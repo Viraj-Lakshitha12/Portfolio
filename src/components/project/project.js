@@ -3,7 +3,11 @@ import $ from 'jquery'
 import { TweenMax, TweenLite } from 'gsap/all'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
-
+import project1 from '../../assets/projects/project1.png'
+import project4 from '../../assets/projects/project4.png'
+import project5 from '../../assets/projects/project5.png'
+import project6 from '../../assets/projects/project6.png'
+import project7 from '../../assets/projects/project7.png'
 export const Project = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
@@ -91,35 +95,36 @@ export const Project = () => {
       <div className="slider">
         <div className="slider-wrapper flex">
           <div className="slide flex">
-            <div className="slide-image slider-link prev"><img src="https://goranvrban.com/codepen/img2.jpg" />
-              <div className="overlay"></div>
+            <div className="slide-image slider-link prev"><img src={project1} alt={'project1'} />
+              {/*<div className="overlay"></div>*/}
             </div>
             <div className="slide-content">
-              <div className="slide-date">30.07.2017.</div>
-              <div className="slide-title">LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT</div>
-              <div className="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat
-                apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per
-                rebum omittam ex.
+              <div className="slide-date">02.05.2022.</div>
+              <div className="slide-title">D24 Hostel Management System</div>
+              <div className="slide-text">With this basic ORM framework,
+                you can create tables in the database without the
+                use of any SQL queries
+              </div>
+              <div className="slide-more">READ MORE</div>
+            </div>
+          </div>
+
+          <div className="slide flex">
+            <div className="slide-image slider-link next"><img src={project5} alt={'project5'} />
+              {/*<div className="overlay"></div>*/}
+            </div>
+            <div className="slide-content">
+              <div className="slide-date">30.12.2023.</div>
+              <div className="slide-title">Food Ordering System</div>
+              <div className="slide-text">A modern and user-friendly Food
+                Ordering App built with React, Tailwind CSS,
+                Node.js, and TypeScript.
               </div>
               <div className="slide-more">READ MORE</div>
             </div>
           </div>
           <div className="slide flex">
-            <div className="slide-image slider-link next"><img src="https://goranvrban.com/codepen/img3.jpg" />
-              <div className="overlay"></div>
-            </div>
-            <div className="slide-content">
-              <div className="slide-date">30.08.2017.</div>
-              <div className="slide-title">LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT</div>
-              <div className="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat
-                apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per
-                rebum omittam ex.
-              </div>
-              <div className="slide-more">READ MORE</div>
-            </div>
-          </div>
-          <div className="slide flex">
-            <div className="slide-image slider-link next"><img src="https://goranvrban.com/codepen/img5.jpg" />
+            <div className="slide-image slider-link next"><img src={project4} alt={'project4'} />
               <div className="overlay"></div>
             </div>
             <div className="slide-content">
@@ -133,7 +138,7 @@ export const Project = () => {
             </div>
           </div>
           <div className="slide flex">
-            <div className="slide-image slider-link next"><img src="https://goranvrban.com/codepen/img6.jpg" />
+            <div className="slide-image slider-link next"><img src={project6} alt={'project6'} />
               <div className="overlay"></div>
             </div>
             <div className="slide-content">

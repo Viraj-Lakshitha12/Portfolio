@@ -32,41 +32,45 @@ body {
 }
 .slide-image {
   height: 24vw;
+
 }
 .slide-image img {
-  width: 24vw;
+  width: 44vw;
   cursor: pointer;
 }
 .slide-content {
   width: 25vw;
   color: #fff;
-  padding: 3vw 18vw 3vw 9vw;
+  padding: 4vw 18vw 3vw 5vw;
 }
 .slide-date {
   color: #0a8acb;
   font-size: 1.1vw;
-  font-weight: 400;
+  font-weight: bolder;
   letter-spacing: 0.1vw;
-  padding-bottom: 1.4vw;
+  padding-bottom: 0.4vw;
 }
 .slide-title {
-  font-size: 1.2vw;
-  font-weight: 400;
+  font-size: 1.5vw;
+  font-weight: bolder;
   letter-spacing: 0.1vw;
   line-height: 1.55vw;
-  padding-bottom: 1.8vw;
+  padding-bottom: 0.4vw;
 }
 .slide-text {
-  font-size: 0.8vw;
+  font-size: 0.9vw;
   line-height: 1.2vw;
   opacity: 0.8;
-  padding-bottom: 4vw;
+  padding-bottom: 1vw;
 }
 .slide-more {
-  font-weight: 400;
-  letter-spacing: 0.1vw;
+  font-weight: bold;
+  letter-spacing: 0.05vw;
   float: left;
-  font-size: 0.9vw;
+  font-size: 1vw;
+}
+.slide-more:hover{
+  cursor: pointer;
 }
 .slide-bullet {
   width: 0.5vw;
