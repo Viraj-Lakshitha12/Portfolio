@@ -8,6 +8,8 @@ import './App.scss'
 import { Project } from './components/project/project'
 import { MainImage } from './components/image/mainImage'
 
+import './App.scss'
+
 function App() {
   return (
     <>
