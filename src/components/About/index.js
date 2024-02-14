@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react'
 import {
   faAngular,
   faCss3,
-  faGitAlt,
+  faJava,
   faHtml5,
-  faJsSquare,
+  faBootstrap,
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
 import AnimatedLetters from '../AnimatedLetters'
@@ -32,18 +32,18 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a very ambitious full-stack developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+            Viraj Lakshitha, a passionate and highly focused software engineer from Sri Lanka, specializes in crafting
+            innovative solutions using a diverse tech stack. With advanced skills in React, React Native, Spring Boot,
+            HTML, CSS, JS, and more, he brings projects to life, from small business sites to complex web applications.
           </p>
           <p align="LEFT">
             I'm quiet confident, naturally curious, and perpetually working on
             improving my chops one design problem at a time.
           </p>
           <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
+            Confident, naturally curious, and committed to continuous improvement, metackles design challenges with
+            enthusiasm. His passion for technology fuels a relentless pursuit of excellence. In a world of code and
+            creativity, Viraj is your go-to engineer for turning ideas into impactful digital realities.
           </p>
         </div>
 
@@ -62,10 +62,10 @@ const About = () => {
               <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
             </div>
             <div className="face5">
-              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+              <FontAwesomeIcon icon={faJava} color="#EFD81D" />
             </div>
             <div className="face6">
-              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+              <FontAwesomeIcon icon={faBootstrap} color="#EC4D28" />
             </div>
           </div>
         </div>

@@ -7,7 +7,8 @@ import project1 from '../../assets/projects/project1.png'
 import project4 from '../../assets/projects/project4.png'
 import project5 from '../../assets/projects/project5.png'
 import project6 from '../../assets/projects/project6.png'
-import project7 from '../../assets/projects/project7.png'
+import project12 from '../../assets/projects/project12.png'
+import project13 from '../../assets/projects/project13.png'
 
 export const Project = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -96,7 +97,7 @@ export const Project = () => {
       <div className="slider">
         <div className="slider-wrapper flex">
           <div className="slide flex">
-            <div className="slide-image slider-link prev"><img src={project1} alt={'project1'} />
+            <div className="slide-image slider-link prev"><img src={project1} alt={'Hostel Menegment System'} />
             </div>
             <div className="slide-content">
               <div className="slide-date">02.05.2022.</div>
@@ -105,12 +106,13 @@ export const Project = () => {
                 you can create tables in the database without the
                 use of any SQL queries
               </div>
-              <div className="slide-more">READ MORE</div>
+              <div><a className="slide-more" href={'https://github.com/Viraj-Lakshitha12/Hibernate_Project'}
+                      target={'_blank'}>READ MORE</a></div>
             </div>
           </div>
 
           <div className="slide flex">
-            <div className="slide-image slider-link next"><img src={project5} alt={'project5'} />
+            <div className="slide-image slider-link next"><img src={project5} alt={'Food ordering System'} />
             </div>
             <div className="slide-content">
               <div className="slide-date">30.12.2023.</div>
@@ -119,7 +121,8 @@ export const Project = () => {
                 Ordering App built with React, Tailwind CSS,
                 Node.js, and TypeScript.
               </div>
-              <div className="slide-more">READ MORE</div>
+              <div><a className="slide-more" href={'https://github.com/Viraj-Lakshitha12/Food-Ordering-System'}
+                      target={'_blank'}>READ MORE</a></div>
             </div>
           </div>
 
@@ -134,21 +137,41 @@ export const Project = () => {
                 conditions, and additional insights. Users can search for cities to get accurate and up-to-date weather
                 forecasts.
               </div>
-              <div className="slide-more">READ MORE</div>
+              <div><a className="slide-more" href={'https://github.com/Viraj-Lakshitha12/weather-app'}
+                      target={'_blank'}>READ MORE</a></div>
             </div>
           </div>
+
           <div className="slide flex">
-            <div className="slide-image slider-link next"><img src={project6} alt={'project6'} />
+            <div className="slide-image slider-link next"><img src={project13} alt={'Music instrument Store'} />
               <div className="overlay"></div>
             </div>
             <div className="slide-content">
-              <div className="slide-date">30.10.2017.</div>
-              <div className="slide-title">LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT</div>
-              <div className="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat
-                apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per
-                rebum omittam ex.
+              <div className="slide-date">20.03.2023.</div>
+              <div className="slide-title">Music Instrument Store</div>
+              <div className="slide-text">Crafted with Bootstrap, HTML, CSS, and JavaScript, my Music Instrument Store
+                website project showcases my skills in frontend development. Explore the world of music with a
+                user-friendly and visually appealing online instrument store.
               </div>
-              <div className="slide-more">READ MORE</div>
+              <div><a className="slide-more" href={'https://github.com/Viraj-Lakshitha12/Music-Instrument-Store'}
+                      target={'_blank'}>READ MORE</a></div>
+            </div>
+          </div>
+
+          <div className="slide flex">
+            <div className="slide-image slider-link next"><img src={project12} alt={'Travel management system'} />
+              <div className="overlay"></div>
+            </div>
+            <div className="slide-content">
+              <div className="slide-date">10.10.2023.</div>
+              <div className="slide-title">Travel Planning System</div>
+              <div className="slide-text">Developed a dynamic web application using microservices with Spring Boot.
+                Utilized Hibernate for efficient data handling, MySQL for storage, and a gateway for a strong
+                foundation.
+              </div>
+              <div><a className="slide-more"
+                      href={'https://github.com/Viraj-Lakshitha12/Spring_final_assignment_Backend'} target={'_blank'}>READ
+                MORE</a></div>
             </div>
           </div>
         </div>
