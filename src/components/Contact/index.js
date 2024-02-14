@@ -69,9 +69,9 @@ const Contact = () => {
         <div className="info-map">
          Viraj Lakshitha
           <br />
-          50 / A / 3 <br />
-          Galanigama<br />
-          Bandaragama
+          50 / A / 3 , <br />
+          Galanigama ,<br />
+          Bandaragama.
           <br />
           <span>viraj.lakshitha.22222@gmail.com</span>
         </div>

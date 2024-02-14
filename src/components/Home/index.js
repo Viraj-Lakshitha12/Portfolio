@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import imageUrl from '../../assets/images/1-removebg-preview-BRsdm1cru-transformed.png'
+import { MainImage } from '../image/mainImage'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -66,7 +67,8 @@ const Home = () => {
           </Link>
         </div>
         <div>
-          <img src={imageUrl} alt="Subscribe Image" className="custom-image" />
+          {/*<img src={imageUrl} alt="Subscribe Image" className="custom-image" />*/}
+          <MainImage/>
         </div>
       </div>
     </>

@@ -6,6 +6,7 @@ import Layout from './components/Layout'
 
 import './App.scss'
 import { Project } from './components/project/project'
+import { MainImage } from './components/image/mainImage'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Project />} />
+          <Route path="/main" element={<MainImage />} />
         </Route>
       </Routes>
     </>
